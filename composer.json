@@ -1,0 +1,15 @@
+{
+    "name": "jalle19/geoipcountryprovider",
+    "type": "library",
+    "description": "Geocoder GeoIP provider that works with the default GeoIP database",
+    "keywords": ["geocoder", "geoip"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0",
+		"ext-geoip": "*",
+		"willdurand/geocoder": "*"
+    },
+    "autoload": {
+        "psr-0": { "GeoipCountryProvider": "src/" }
+    },
+}
