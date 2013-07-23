@@ -40,8 +40,8 @@ class GeoipCountryProvider extends GeoipProvider
         }
 
 		$results = array(
-			'country_name' => geoip_country_name_by_name($address),
-			'country_code' => geoip_country_code_by_name($address),
+			'country_name' => @geoip_country_name_by_name($address),
+			'country_code' => @geoip_country_code_by_name($address),
 		);
 		
         if ($results['country_code'] === false) {
